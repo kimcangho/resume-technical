@@ -1,2 +1,2 @@
-# resume-technical
-Repository containing technical resume.
+# Technical Resume
+Repository with my technical resume in HTML format.
