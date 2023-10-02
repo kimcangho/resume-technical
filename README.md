@@ -1,2 +1,2 @@
 # Technical Resume
-Repository with technical resume in both HTML (index.html) and PDF (kent-kc-ho-resume.pdf) formats.
+Repository with technical resume in PDF (kent-kc-ho-resume.pdf) format.
