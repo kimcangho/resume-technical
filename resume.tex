@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape Kent K.C. Ho} 
+        % % SUBHEADING
+        
+        % \small
+        % EMAIL
+        \href{mailto:ho.kimcang@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ho.kimcang@gmail.com}} ~ 
+        % LINKEDIN
+        \href{https://www.linkedin.com/in/kentkcho/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/kentkcho}}  ~
+        % GITHUB
+        \href{https://github.com/kimcangho}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/kimcangho}}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % Core Skills
+        \textbf{Core Skills}{: Javascript, Typescript, React, TailwindCSS, SASS, CSS3, HTML5, Node.js, Express.js, Prisma, MySQL, JWT, Socket.io, Vite, Git} \\
+        % Exposed to
+        \textbf{Exposed to}{: Next.js, Vercel, Bootstrap, MongoDB, Python, Ubuntu, Linux Mint, Figma} \\
+    \end{itemize}
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+        % Position 1
+        \resumeSubheading
+        {Software Engineering Teaching Assistant - BrainStation}{Toronto, ON}
+            % COMPANY 1
+            {HTML, CSS, SASS, JavaScript, Node.js, Express.js, MySQL, JWT}{01/2023 - 04/2023}
+            \resumeItemListStart
+                \resumeItem{Investigated and debugged student deliverables for course weekly programming sprints, lab assignments, and capstone projects.}
+                \resumeItem{Demonstrated and assessed coding challenges and review sessions to reinforce HTML / CSS / JS / React.js / Node.js / MySQL / Git concepts.}
+                \resumeItem{Directed a cohort of 38 software engineering boot camp students by kicking off projects and clarifying scope requirements.}
+                \resumeItem{Managed cross-collaborative teams during industry hackathons and group projects using JIRA and agile methodology.}
+            \resumeItemListEnd
+
+        % POSITION 2
+        \resumeSubheading
+        {Water Operator}{Vaughan, ON}
+            % COMPANY 2
+            {City of Vaughan - Python, VBA}{10/2019 - 07/2022}
+            \resumeItemListStart
+                \resumeItem{Streamlined water operations and minimised overhead downtime by creating and refining internal tracking tools using VBA and Python.}
+                \resumeItem{Ensured timely completion of emergency work by locating main breaks and overseeing water infrastructure repairs.}
+            \resumeItemListEnd
+
+        % POSITION 3
+        \resumeSubheading
+        {Project Coordinator}{Mississauga, ON}
+            % COMPANY 3
+            {Certified Building Systems}{07/2016 - 05-2018}
+            \resumeItemListStart
+                \resumeItem{Coordinated resources for multiple existing building HVAC retrofits and successfully delivered projects valued at up to \$750,000.}
+                \resumeItem{Executed complex and time-sensitive high-rise crane lift operations by managing multiple crews of contractors and operators.}
+            \resumeItemListEnd
+
+        % POSITION 4
+        \resumeSubheading
+        {Project Associate}{Toronto, ON}
+            % COMPANY 4
+            {WSP (formerly Halsall and Associates)}{07/2016 - 05-2018}
+            \resumeItemListStart
+                \resumeItem{Performed commercial ASHRAE Level 2 energy audit by reviewing utility data, system schematics, and building automation system (BAS) trends to yield annual savings of \$270,000 and 3,200 MWh.}
+                \resumeItem{Conducted water audit for Class A office building by analyzing
+billing/sub-metering data and consulted stakeholders. Recommended
+water conservation plan for energy and monetary savings.}
+            \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+
+        % Position 1
+        \resumeSubheading
+        {gattaGo -\href{https://github.com/kimcangho/gattaGo-client}{\raisebox{-0.2\height}\ \underline{CODE}}}{}
+            {Typescript, React, TailwindCSS, Node.js, Express.js, Prisma, MySQL}{05/2023 - 09/2023}
+            \resumeItemListStart
+                \resumeItem{Dragonboat racing team builder with dashboard display, athlete management, lineup assignment, and race plan crafting features.}
+            \resumeItemListEnd
+
+            
+        % Project 2
+        \resumeSubheading
+        {Squiggled -\href{https://github.com/kimcangho/squiggled-client}{\raisebox{-0.2\height}\ \underline{CODE}} -
+        \href{https://squiggled.netlify.app/}{\raisebox{-0.2\height}\ \underline{SITE}}
+        }{}
+            {JavaScript, React, SASS, Node.js, Express.js, WebSockets}{12/2022 - 01-2023}
+            \resumeItemListStart
+                \resumeItem{Peer-to-peer whiteboarding web application allowing users to capture, annotate, send and download screenshots from their device camera.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {University of Waterloo}{Waterloo, ON}
+    {Honours Bachelors of Applied Science in Mechanical Engineering}{09/2010 - 04/2015}
+
+     % MAIN INFORMATION
+    \resumeSubheading
+    {Fleming College}{Lindsay, ON}
+    {Graduate Certificate - Advanced Water Systems Operations and Management}{09/2018 - 08/2019}
+
+     % MAIN INFORMATION
+    \resumeSubheading
+    {BrainStation}{Toronto, ON}
+    {Diploma - Web Development}{09/2022 - 12/2022}
+  \resumeSubHeadingListEnd
+
+  \end{document}
